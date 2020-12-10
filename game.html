@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="game.css" />
+
+    <title>Guessing Game</title>
+  </head>
+  <body id="body">
+    <h1 id="head">Guessing Game</h1>
+    <div>
+      <input type="button" value="Play Again!" id="btn" />
+    </div>
+    <div id="secret">Secret Number</div>
+    <div class="box">
+      <div class="input">
+        <p>Pick a number between 1 and 20</p>
+        <input type="number" name="number" id="num" />
+        <input type="submit" value="Check" id="submit" />
+      </div>
+      <div class="score">
+        <p><span id="massage">Start The Game</span></p>
+        <p id="scr">score = <span id="points"> 20</span></p>
+        <p>High score = <span id="highscore"> 0 </span></p>
+      </div>
+    </div>
+    <div id="name">Made By Badal Jha</div>
+    <script src="game.js"></script>
+  </body>
+</html>
