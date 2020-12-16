@@ -32,8 +32,11 @@ document.getElementById("submit").addEventListener("click", function () {
     displayMassage("correct  Congrats!! 🤩🤩");
     document.getElementById("secret").textContent = x;
     document.getElementById("points").textContent = point;
-    if (point > highscore)
+
+    if (point > highscore) {
       document.getElementById("highscore").textContent = point;
+      highscore = point;
+    }
   }
 });
 
