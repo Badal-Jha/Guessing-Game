@@ -22,7 +22,7 @@ document.getElementById("submit").addEventListener("click", function () {
       // document.getElementById("massage").textContent =
       //   guess > x ? "To High ☹" : "To Low ☹"; // using conditional operator is good way to write short code
 
-      displayMassage(guess > x ? "To High ☹" : "To Low ☹");
+      displayMassage(guess > x ? "To High 😌" : "To Low 😭");
 
       point--;
       document.getElementById("points").textContent = point;
