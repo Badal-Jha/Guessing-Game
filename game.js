@@ -21,6 +21,8 @@ document.getElementById("submit").addEventListener("click", function () {
     } else {
       // document.getElementById("massage").textContent =
       //   guess > x ? "To High ☹" : "To Low ☹"; // using conditional operator is good way to write short code
+
+      //adding audio
       let audio = new Audio("audio5.wav");
       audio.play();
       displayMassage(guess > x ? "To High 😌" : "To Low 😭");
@@ -29,6 +31,7 @@ document.getElementById("submit").addEventListener("click", function () {
       document.getElementById("points").textContent = point;
     }
   } else if (guess === x) {
+    //adding music for victory
     let audio = new Audio("audio.wav");
     audio.play();
     document.getElementById("body").style.backgroundColor = "green";
