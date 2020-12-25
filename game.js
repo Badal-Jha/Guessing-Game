@@ -21,13 +21,16 @@ document.getElementById("submit").addEventListener("click", function () {
     } else {
       // document.getElementById("massage").textContent =
       //   guess > x ? "To High ☹" : "To Low ☹"; // using conditional operator is good way to write short code
-
+      let audio = new Audio("audio5.wav");
+      audio.play();
       displayMassage(guess > x ? "To High 😌" : "To Low 😭");
 
       point--;
       document.getElementById("points").textContent = point;
     }
   } else if (guess === x) {
+    let audio = new Audio("audio.wav");
+    audio.play();
     document.getElementById("body").style.backgroundColor = "green";
     displayMassage("correct  Congrats!! 🤩🤩");
     document.getElementById("secret").textContent = x;
